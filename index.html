@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <title>Electronic First</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="upperSection">
+        <div class="nav">
+          <div><img src="./img/logo.png" /></div>
+          <div class="middleNav">
+            <div>
+              <a>Trending</a><a>Pre-orders</a><a>Upcoming</a><a>Support24/7</a>
+            </div>
+            <div style="display: flex" id="searchNav" class="searchNav">
+              <div id="navTag1" onclick="showNav1()">
+                <img src="./img/i1.png" /> PC <img src="./img/dropdown.png" />
+              </div>
+              <div id="navTag2" onclick="showNav2()">
+                <img src="./img/i2.png" /> Playstation
+                <img src="./img/dropdown.png" />
+              </div>
+              <div id="navTag3" onclick="showNav3()">
+                <img src="./img/i3.png" /> Xbox <img src="./img/dropdown.png" />
+              </div>
+              <div id="navTag4" onclick="showNav4()">
+                <img src="./img/i4.png" /> Nintendo
+                <img src="./img/dropdown.png" />
+              </div>
+              <div id="search" onclick="clickSearch()" class="search">
+                <img src="./img/search.png" />
+              </div>
+            </div>
+            <div style="display: none" id="searchFull">
+              <div><input placeholder="search" /></div>
+              <div>Advance search</div>
+              <div id="cancel" onclick="cancel()">×</div>
+            </div>
+            <div style="display: none" id="selectNav" class="selectNav">
+              <div>
+                <div>Platforms</div>
+                <div>View all</div>
+              </div>
+              <div>
+                <div>Steam</div>
+                <div>Ublsoft Connect</div>
+                <div>EA App</div>
+                <div>Battle.net</div>
+                <div>Rockstar</div>
+                <div>GOG.com</div>
+                <div>Microsoft Store</div>
+                <div>Epic</div>
+              </div>
+              <div>
+                <div>Prepaid cards</div>
+                <div>View all</div>
+              </div>
+              <div>
+                <div>Steam</div>
+                <div>IG</div>
+                <div>Blizzard</div>
+              </div>
+            </div>
+          </div>
+          <div>purchase</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("selectNav");
+      function showNav1() {
+        var y = document.getElementById("navTag1");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.color = "white";
+        } else {
+          x.style.display = "none";
+          y.style.color = "lightgrey";
+        }
+      }
+      function showNav2() {
+        var y = document.getElementById("navTag2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.color = "white";
+        } else {
+          x.style.display = "none";
+          y.style.color = "lightgrey";
+        }
+      }
+      function showNav3() {
+        var y = document.getElementById("navTag3");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.color = "white";
+        } else {
+          x.style.display = "none";
+          y.style.color = "lightgrey";
+        }
+      }
+      function showNav4() {
+        var y = document.getElementById("navTag4");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.color = "white";
+        } else {
+          x.style.display = "none";
+          y.style.color = "lightgrey";
+        }
+      }
+      var state = false;
+      var search = document.getElementById("search");
+      var searchNav = document.getElementById("searchNav");
+      var searchFull = document.getElementById("searchFull");
+      function clickSearch() {
+        console.log(state);
+
+        if (state === false) {
+          console.log(state);
+          searchNav.style.display = "none";
+          searchFull.style.display = "flex";
+          state = true;
+        } else if (state === true) {
+          searchNav.style.display = "flex";
+          searchFull.style.display = "none";
+          state = false;
+        }
+      }
+
+      function cancel() {
+        if (state === true) {
+          searchNav.style.display = "none";
+          searchFull.style.display = "flex";
+          state = false;
+        } else if (state === false) {
+          searchNav.style.display = "flex";
+          searchFull.style.display = "none";
+          state = true;
+        }
+      }
+    </script>
+  </body>
+</html>

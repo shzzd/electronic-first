@@ -1,0 +1,186 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(67, 67, 67);
+}
+
+/* .main {
+  background-color: grey;
+} */
+
+.upperSection {
+  /* border: 1px red solid; */
+  background-image: url("./img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.nav {
+  /* border: 1px blue solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav > div {
+  color: white;
+  margin-top: 1rem;
+}
+
+.nav > div:nth-child(1) {
+  width: 10%;
+  padding: 0 1rem;
+}
+.nav > div:nth-child(2) {
+  /* width: 60%; */
+  padding: 0 1rem;
+}
+
+.nav > div:nth-child(1) {
+  width: 5%;
+  padding: 0 1rem;
+}
+
+.nav > div:nth-child(1) > img {
+  width: 100%;
+}
+
+/* .middleNav {
+  border: 1px white solid;
+} */
+
+.middleNav > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.middleNav > div:nth-child(1) > a {
+  padding: 0.5rem;
+}
+
+.middleNav > div:nth-child(1) > a:hover {
+  background-color: rgba(255, 255, 255, 0.635);
+  cursor: pointer;
+  color: red;
+}
+
+.middleNav > div:nth-child(2) {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(87, 87, 87, 0.212);
+}
+
+.middleNav > div:nth-child(2) > div {
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: lightgrey;
+}
+
+.middleNav > div:nth-child(2) > div:hover {
+  font-weight: 500;
+}
+
+.middleNav > div:nth-child(2) > div > img {
+  /* border: 1px red solid; */
+  width: 1rem;
+  margin: 0 0.4rem;
+}
+
+.search {
+  background-color: orangered;
+  width: 2rem;
+  height: 2rem;
+  /* height: 100%; */
+  border-radius: 50%;
+  padding: 0;
+}
+
+.search > img {
+  width: 100%;
+}
+
+.selectNav {
+  /* border: 1px red solid; */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(196, 196, 196, 0.212);
+}
+
+#searchFull {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  background: orangered;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 2rem;
+  position: relative;
+}
+
+#searchFull > div:nth-child(1) > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#searchFull > div:nth-child(1) > input::placeholder {
+  color: white;
+}
+
+#cancel {
+  position: absolute;
+  right: -1.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.selectNav > div:nth-child(1),
+.selectNav > div:nth-child(3) {
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.selectNav > div:nth-child(2),
+.selectNav > div:nth-child(4) {
+  padding: 0.5rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.selectNav > div:nth-child(2) > div,
+.selectNav > div:nth-child(4) > div {
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+}
+
+.selectNav > div:nth-child(2) > div:hover,
+.selectNav > div:nth-child(4) > div:hover {
+  background-color: rgba(150, 150, 150, 0.348);
+  cursor: pointer;
+}
